@@ -121,5 +121,8 @@ BOARD_USES_METADATA_PARTITION := true
 # Platform
 TARGET_BOARD_PLATFORM := mt6835
 
+# SPL
+VENDOR_SECURITY_PATCH := 2026-03-05
+
 # Inherit the proprietary files
 include vendor/xiaomi/air/BoardConfigVendor.mk
