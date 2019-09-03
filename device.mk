@@ -55,6 +55,8 @@ PRODUCT_PACKAGES += \
     create_pl_dev.recovery
 
 # Audio
+TARGET_EXCLUDES_AUDIOFX := true
+
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
     android.hardware.audio@7.1-impl \
