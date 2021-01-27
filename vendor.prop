@@ -52,6 +52,7 @@ ro.vendor.arm.egl.configs.r8_g8_b8_a8_32bit_fixed.hal_format=0x1
 ro.vendor.arm.egl.configs.r8_g8_b8_a8_32bit_fixed.recordable=true
 
 # Media
+debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=512
 debug.mediatek.disp_decompress=1
 persist.vendor.md_c2k_cap_dep_check=0
