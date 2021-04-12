@@ -60,10 +60,11 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 BOARD_KERNEL_CMDLINE += bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem
-BOARD_KERNEL_CMDLINE +=  sysctl.kernel.sched_pelt_multiplier=4
-BOARD_KERNEL_CMDLINE +=  androidboot.serialconsole=0
+BOARD_KERNEL_CMDLINE += sysctl.kernel.sched_pelt_multiplier=4
+BOARD_KERNEL_CMDLINE += androidboot.serialconsole=0
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
-BOARD_KERNEL_CMDLINE +=  cgroup_disable=memory
+BOARD_KERNEL_CMDLINE += cgroup_disable=memory
+BOARD_KERNEL_CMDLINE += log_buf_len=1024K
 
 BOARD_DTB_OFFSET := 0x47c80000
 BOARD_KERNEL_BASE := 0x00000000
