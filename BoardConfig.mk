@@ -6,6 +6,9 @@
 DEVICE_PATH := device/xiaomi/air
 KERNEL_PATH := device/xiaomi/air-kernel
 
+# Enable 64-bit for non-zygote.
+ZYGOTE_FORCE_64 := true
+
 # A/B
 AB_OTA_PARTITIONS := \
     boot \
