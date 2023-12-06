@@ -17,6 +17,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 DEVICE_PATH := device/xiaomi/air
 
+# Linker config
+PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
+    $(DEVICE_PATH)/configs/linker.config.json
+
 # Virtual A/B
 PRODUCT_PACKAGES += \
     com.android.hardware.boot \
