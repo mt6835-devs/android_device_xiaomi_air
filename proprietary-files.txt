@@ -1266,6 +1266,11 @@ vendor/firmware/novatek_ts_hkc_mp.bin
 vendor/firmware/novatek_ts_truly_fw.bin
 vendor/firmware/novatek_ts_truly_mp.bin
 vendor/firmware/focaltech_ts_fw_BOE.bin
+vendor/firmware/novatek_ts_hkc_fw.bin:vendor_ramdisk/lib/firmware/novatek_ts_hkc_fw.bin
+vendor/firmware/novatek_ts_hkc_mp.bin:vendor_ramdisk/lib/firmware/novatek_ts_hkc_mp.bin
+vendor/firmware/novatek_ts_truly_fw.bin:vendor_ramdisk/lib/firmware/novatek_ts_truly_fw.bin
+vendor/firmware/novatek_ts_truly_mp.bin:vendor_ramdisk/lib/firmware/novatek_ts_truly_mp.bin
+vendor/firmware/focaltech_ts_fw_BOE.bin:vendor_ramdisk/lib/firmware/focaltech_ts_fw_BOE.bin
 
 # Trusted Execution Environment (TEE)
 vendor/bin/miteelog
