@@ -139,6 +139,8 @@ TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
 BOARD_USES_SYSTEM_DLKMIMAGE := true
 BOARD_USES_VENDOR_DLKMIMAGE := true
 
