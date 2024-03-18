@@ -90,6 +90,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_SHIPPING_API_LEVEL := 33
 BOARD_SHIPPING_API_LEVEL := 33
 
+# DRM (Clearkey)
+PRODUCT_PACKAGES += \
+    com.android.hardware.drm.clearkey
+
 # Fastboot
 PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery \
