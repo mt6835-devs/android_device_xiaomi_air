@@ -158,6 +158,9 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Overlays
+PRODUCT_PACKAGES += \
+    WifiOverlay
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Keymaster
