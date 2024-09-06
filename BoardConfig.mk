@@ -15,6 +15,9 @@ IGNORE_PREFER32_ON_DEVICE := true
 # Include 64-bit mediaserver to support 64-bit only devices
 TARGET_DYNAMIC_64_32_MEDIASERVER := true
 
+# Include 64-bit drmserver to support 64-bit only devices
+TARGET_DYNAMIC_64_32_DRMSERVER := true
+
 # A/B
 AB_OTA_PARTITIONS := \
     boot \
