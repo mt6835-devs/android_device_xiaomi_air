@@ -35,6 +35,8 @@ lib_fixups: lib_fixups_user_type = {
 
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/android.hardware.security.keymint@2.0-service.mitee': blob_fixup()
+        .add_needed('android.hardware.security.rkp-V3-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
