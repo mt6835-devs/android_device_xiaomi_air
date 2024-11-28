@@ -1,3 +1,6 @@
+# Keymint
+/(vendor|system/vendor)/bin/hw/android.hardware.security.keymint@2.0-service.mitee                     u:object_r:hal_keymint_default_exec:s0
+
 # Sensor
 /vendor/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal                                     u:object_r:hal_sensors_default_exec:s0
 
