@@ -62,6 +62,13 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'BTAudiosuspend', b'A2dpSuspended\x00'),
     'vendor/lib64/hw/hwcomposer.mtk_common.so' : blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
+    (
+        'vendor/bin/mnld',
+        'vendor/lib64/librgbwlightsensor.so',
+        'vendor/lib64/mt6835/libaalservice.so',
+        'vendor/lib64/mt6835/libcam.utils.sensorprovider.so'    
+    ): blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     'vendor/lib64/libmnl.so': blob_fixup()
         .add_needed('libcutils.so'),
     'vendor/lib/libvcodec_oal.so': blob_fixup()
