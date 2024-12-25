@@ -161,6 +161,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     WifiOverlay
 
+PRODUCT_PACKAGES += \
+    NcmTetheringOverlay
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Keymaster
