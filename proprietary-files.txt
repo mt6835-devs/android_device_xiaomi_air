@@ -270,6 +270,17 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so
 
+# Keymint
+vendor/bin/hw/android.hardware.identity-service.mitee@4.0
+vendor/bin/hw/android.hardware.security.keymint@2.0-service.mitee
+vendor/etc/init/android.hardware.identity@4.0-service.mitee.rc
+vendor/etc/init/android.hardware.security.keymint.mitee@2.0-service.rc
+vendor/etc/permissions/android.hardware.hardware_keystore.xml:vendor/etc/permissions/android.hardware.hardware_keystore.mitee.xml
+vendor/etc/vintf/manifest/android.hardware.identity@4.0-service.mitee.xml
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service.mitee.xml
+vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.mitee.xml
+vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.mitee.xml
+
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.7-service
 vendor/etc/init/vendor.mediatek.hardware.mms@1.7-service.rc
