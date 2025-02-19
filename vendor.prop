@@ -13,6 +13,9 @@ ro.config.media_vol_steps=25
 ro.config.vc_call_vol_default=4
 ro.config.vc_call_vol_steps=12
 
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # DRM
 ro.netflix.bsp_rev=MTK6835-36999-1
 
