@@ -52,6 +52,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Fastboot
 PRODUCT_PACKAGES += \
+    android.hardware.fastboot-service.example_recovery \
     fastbootd
 
 # Soong namespaces
