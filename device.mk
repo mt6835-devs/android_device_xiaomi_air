@@ -175,6 +175,7 @@ PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
     init.modem.rc \
     init.mt6835.rc \
+    init.mt6835.power.rc \
     init.mt6835.usb.rc \
     init.recovery.mt6835.rc \
     init.mtkgki.rc \
