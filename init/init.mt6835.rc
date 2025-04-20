@@ -20,13 +20,6 @@ on init
     write /proc/sys/net/core/wmem_max 8388608
     write /proc/sys/net/core/rmem_max 8388608
 
-    # update cpus for cpuset cgroup
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/background/cpus 0-5
-    write /dev/cpuset/system-background/cpus 0-5
-    write /dev/cpuset/top-app/cpus 0-7
-
 on late-init
     # enable rcu_expedited
     write /sys/kernel/rcu_expedited 1
@@ -708,7 +701,6 @@ on property:sys.boot_completed=1
     write /sys/block/dm-4/queue/read_ahead_kb 128
     write /sys/block/dm-5/queue/read_ahead_kb 128
 
-on property:sys.boot_completed=1
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1
     write /sys/devices/platform/soc/1c804000.spmi/spmi-0/0-04/mt6377-gauge/FG_daemon_disable 1
