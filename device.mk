@@ -176,7 +176,6 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     init.mt6835.rc \
     init.mt6835.usb.rc \
-    init.cgroup.rc \
     init.recovery.mt6835.rc \
     init.mtkgki.rc \
     init.project.rc \
