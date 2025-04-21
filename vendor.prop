@@ -15,3 +15,6 @@ ro.config.vc_call_vol_steps=12
 
 # DRM
 ro.netflix.bsp_rev=MTK6835-36999-1
+
+# Gatekeeper
+ro.hardware.gatekeeper=mitee
