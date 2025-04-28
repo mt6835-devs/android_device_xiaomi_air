@@ -13,6 +13,17 @@ ro.config.media_vol_steps=25
 ro.config.vc_call_vol_default=4
 ro.config.vc_call_vol_steps=12
 
+# Connectivity
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.coredump.mode=0
+persist.vendor.connsys.dynamic.dump=0
+persist.vendor.connsys.fm_chipid=connac2x
+persist.vendor.connsys.patch.version=-1
+persist.vendor.connsysfw.enable=false
+ro.vendor.connsys.dedicated.log.port=bt,wifi,ics,btmcu,wifimcu
+ro.vendor.connsys.dedicated.log=1
+vendor.connsys.driver.ready=no
+
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
 
