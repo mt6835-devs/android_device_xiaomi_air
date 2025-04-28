@@ -379,6 +379,12 @@ vendor/mitee/ta/dba51a17-0563-11e7-93b16fa7b0071a51.ta
 vendor/mitee/ta/e5140b33-76fa-4c63-ab18062caab2fb5c.ta
 vendor/mitee/ta/e97c270e-a5c4-4c58-bcd3384a2fa2539e.ta
 
+# Tether Offload
+vendor/bin/hw/tetheroffloadservice
+vendor/etc/init/tetheroffloadservice.rc
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+
 # WiFi
 vendor/bin/netdagent
 vendor/bin/wlan_assistant
