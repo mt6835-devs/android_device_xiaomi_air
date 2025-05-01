@@ -80,6 +80,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.mt6893.usb.rc",
+    src: "init.mt6893.usb.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.sensor_2_0.rc",
     src: "init.sensor_2_0.rc",
     relative_install_path: "init/hw",
