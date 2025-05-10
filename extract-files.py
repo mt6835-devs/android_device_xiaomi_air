@@ -46,6 +46,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.composer@2.1-resources.so', 'android.hardware.graphics.composer@2.1-resources-v34.so'),
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
+    'vendor/lib64/hw/audio.primary.mt6835.so': blob_fixup()
+        .binary_regex_replace(b'A2dpsuspendonly', b'A2dpSuspended\x00\x00')
+        .binary_regex_replace(b'BTAudiosuspend', b'A2dpSuspended\x00'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
