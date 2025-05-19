@@ -146,6 +146,10 @@ PRODUCT_PACKAGES += \
     init.insmod.sh \
     init.insmod.mt6835.cfg
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
 # Media
 PRODUCT_PACKAGES += \
     android.hardware.media.c2-mtk-service
