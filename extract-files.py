@@ -44,6 +44,8 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('start', 'enable'),
     'vendor/bin/hw/android.hardware.graphics.composer@3.1-service': blob_fixup()
         .replace_needed('android.hardware.graphics.composer@2.1-resources.so', 'android.hardware.graphics.composer@2.1-resources-v34.so'),
+    'vendor/bin/hw/mtkfusionrild': blob_fixup()
+        .add_needed('libutils-v32.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
