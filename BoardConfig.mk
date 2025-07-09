@@ -6,6 +6,23 @@
 DEVICE_PATH := device/xiaomi/air
 KERNEL_PATH := device/xiaomi/air-kernel
 
+# A/B
+AB_OTA_PARTITIONS := \
+    boot \
+    init_boot \
+    odm \
+    odm_dlkm \
+    product \
+    system \
+    system_dlkm \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor \
+    vendor \
+    vendor_boot \
+    vendor_dlkm
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
