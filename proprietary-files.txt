@@ -2,6 +2,13 @@
 ## are from OS2.0.206.0.VGQMIXM.
 ## variant: GLOBAL
 
+# AAL
+vendor/lib64/mt6835/libaal_cust_func.so;SYMLINK=vendor/lib64/libaal_cust_func.so
+vendor/lib64/mt6835/libaalservice.so;SYMLINK=vendor/lib64/libaalservice.so
+vendor/lib64/libaal_cust.so
+vendor/lib64/libaal_key.so
+vendor/lib64/libaal_mtk.so
+
 # Audio
 vendor/firmware/awinic_params.bin
 vendor/firmware/awinic_sinwave_params.bin
