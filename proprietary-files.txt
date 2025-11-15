@@ -181,3 +181,40 @@ vendor/lib64/libwvaidl.so
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mitee.so
+
+# Graphics
+vendor/bin/hw/mt6835/android.hardware.graphics.allocator@4.0-service-mediatek.mt6835;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
+vendor/etc/gralloc/cam.xml
+vendor/etc/gralloc/dpu.xml
+vendor/etc/gralloc/dpu_aeu.xml
+vendor/etc/gralloc/gpu.xml
+vendor/etc/gralloc/vpu.xml
+vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
+vendor/etc/mali_platform.config
+vendor/lib64/egl/mt6835/libGLES_mali.so;SYMLINK=vendor/lib64/egl/libGLES_mali.so
+vendor/lib64/hw/mt6835/android.hardware.graphics.allocator@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+vendor/lib64/hw/mt6835/android.hardware.graphics.mapper@4.0-impl-mediatek.so;SYMLINK=vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+vendor/lib64/hw/mt6835/gralloc.common.so;SYMLINK=vendor/lib64/hw/gralloc.common.so
+vendor/lib64/hw/mt6835/vulkan.mali.so;SYMLINK=vendor/lib64/hw/vulkan.mali.so
+vendor/lib64/mt6835/arm.graphics-V3-ndk.so;SYMLINK=vendor/lib64/arm.graphics-V3-ndk.so
+vendor/lib64/mt6835/libarm_egl_properties_sysprop.so;SYMLINK=vendor/lib64/libarm_egl_properties_sysprop.so
+vendor/lib64/mt6835/libarm_gralloc_properties_sysprop.so;SYMLINK=vendor/lib64/libarm_gralloc_properties_sysprop.so
+vendor/lib64/mt6835/libgpudataproducer.so;SYMLINK=vendor/lib64/libgpudataproducer.so
+vendor/lib64/mt6835/liblibarm_mali_config_sysprops.so;SYMLINK=vendor/lib64/liblibarm_mali_config_sysprops.so
+vendor/bin/hw/android.hardware.graphics.composer@3.1-service
+vendor/etc/displayconfig/display_id_4627039422300187648.xml
+vendor/etc/init/android.hardware.graphics.composer@3.1-service.rc
+vendor/etc/vintf/manifest/manifest_hwcomposer.xml
+vendor/lib64/hw/hwcomposer.mtk_common.so
+vendor/lib64/mt6835/libdpframework.so;SYMLINK=vendor/lib64/libdpframework.so
+vendor/lib64/mt6835/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
+vendor/lib64/libcomposer_ext.so
+vendor/lib64/libion_mtk.so
+vendor/lib64/libion_ulit.so
+vendor/lib64/libged.so
+vendor/lib64/libgpu_aux.so
+vendor/lib64/libgpud.so
+vendor/lib64/libgralloc_extra.so
+vendor/lib64/libgralloc_metadata.so
+vendor/lib64/libgralloctypes_mtk.so
+vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
