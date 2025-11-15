@@ -87,6 +87,11 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
 
+# Platform
+ro.vendor.mediatek.platform=MT6835
+ro.soc.model=MT6835
+ro.soc.manufacturer=Mediatek
+
 # Radio
 persist.vendor.radio.fd.counter=150
 persist.vendor.radio.fd.off.counter=50
