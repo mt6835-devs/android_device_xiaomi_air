@@ -51,6 +51,10 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(b'BTAudiosuspend', b'A2dpSuspended\x00'),
     'vendor/lib64/libmnl.so': blob_fixup()
         .add_needed('libcutils.so'),
+    'vendor/lib/libvcodec_oal.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
