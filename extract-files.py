@@ -57,6 +57,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libutils-v32.so'),
     'vendor/lib64/hw/audio.primary.mt6835.so': blob_fixup()
         .replace_needed('libalsautils.so', 'libalsautils-stock.so')
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
         .binary_regex_replace(b'A2dpsuspendonly', b'A2dpSuspended\x00\x00')
         .binary_regex_replace(b'BTAudiosuspend', b'A2dpSuspended\x00'),
     'vendor/lib64/libmnl.so': blob_fixup()
@@ -65,6 +66,12 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('__aeabi_memcpy')
         .clear_symbol_version('__aeabi_memset')
         .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+    (
+        'vendor/lib64/hw/mt6835/vendor.mediatek.hardware.pq_aidl-impl.so',
+        'vendor/lib64/librt_extamp_intf.so',
+        'vendor/lib64/libpqxmlparser.so'
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     (
         'vendor/lib64/mt6835/libneuralnetworks_sl_driver_mtk_prebuilt.so', 
         'vendor/lib64/libTrueSight.so', 
