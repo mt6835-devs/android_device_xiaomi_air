@@ -272,7 +272,7 @@ $(call soong_config_set,power_libperfmgr,mode_extension_lib, //$(DEVICE_PATH):li
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
-    libmtkperf_client_vendor \
+    libmtkperf_client_vendor:64 \
     libmtkperf_client \
     libpowerhalwrap_vendor
 
