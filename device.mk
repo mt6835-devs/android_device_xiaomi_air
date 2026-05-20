@@ -60,6 +60,24 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.mt6835 \
+    fstab.mt6835.vendor_ramdisk \
+    init.connectivity.rc \
+    init.mi_thermald.rc \
+    init.modem.rc \
+    init.mt6835.rc \
+    init.cgroup.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.sensor_2_0.rc \
+    ueventd.mt6835.rc
+
+PRODUCT_PACKAGES += \
+    init.insmod.sh \
+    init.insmod.mt6835.cfg
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
