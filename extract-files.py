@@ -91,6 +91,12 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
     'vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so': blob_fixup()
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
+    'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
+        .patchelf_version('0_17_2')
+        .replace_needed(
+            "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so",
+            "vendor.goodix.hardware.biometrics.fingerprint@2.1.so"
+        ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

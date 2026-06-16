@@ -836,6 +836,17 @@ vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvaidl.so
 
+# Fingerprint
+vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
+vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
+vendor/lib64/hw/fingerprint.goodix.default.so:vendor/lib64/hw/fingerprint.goodix.air.so;FIX_SONAME
+vendor/lib64/hw/fingerprint.silead.default.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libmifpext.so
+vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/libsl_fp_impl.so
+
 # FuelGauge
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
