@@ -78,6 +78,41 @@
         <fqname>IRadioData/slot2</fqname>
     </hal>
     <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.ims</name>
+        <fqname>IMtkRadioExIms/slot1</fqname>
+        <fqname>IMtkRadioExIms/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.messaging</name>
+        <fqname>IMtkRadioExMessaging/slot1</fqname>
+        <fqname>IMtkRadioExMessaging/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.modem</name>
+        <fqname>IMtkRadioExModem/slot1</fqname>
+        <fqname>IMtkRadioExModem/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.network</name>
+        <fqname>IMtkRadioExNetwork/slot1</fqname>
+        <fqname>IMtkRadioExNetwork/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.rcs</name>
+        <fqname>IMtkRadioExRcs/slot1</fqname>
+        <fqname>IMtkRadioExRcs/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.sim</name>
+        <fqname>IMtkRadioExSim/slot1</fqname>
+        <fqname>IMtkRadioExSim/slot2</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.mtkradioex.voice</name>
+        <fqname>IMtkRadioExVoice/slot1</fqname>
+        <fqname>IMtkRadioExVoice/slot2</fqname>
+    </hal>
+    <hal format="aidl">
         <name>android.hardware.radio.messaging</name>
         <fqname>IRadioMessaging/slot1</fqname>
         <fqname>IRadioMessaging/slot2</fqname>
@@ -175,6 +210,11 @@
         <fqname>@3.0::IMtkRadioEx/mtkSlot2</fqname>
         <fqname>@3.0::IMtkRadioEx/mtkSmartRatSwitch1</fqname>
         <fqname>@3.0::IMtkRadioEx/mtkSmartRatSwitch2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.videotelephony</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IVideoTelephony/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mtkpower</name>

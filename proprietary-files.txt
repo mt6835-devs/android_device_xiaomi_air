@@ -1115,7 +1115,6 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 
 # Radio
-# Radio
 vendor/bin/hw/mtkfusionrild
 vendor/bin/bip_ap
 vendor/bin/ccci_mdinit
@@ -1199,6 +1198,18 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.voice-V1-ndk.so
+
+# Radio (IMS)
+vendor/bin/hw/vtservice_hidl
+vendor/bin/volte_clientapi_ua
+vendor/bin/ipsec_mon
+vendor/etc/init/init.vtservice_hidl.rc
+vendor/etc/init/volte_clientapi_ua.rc
+vendor/etc/init/ipsec_mon.rc
+vendor/lib64/vendor.mediatek.hardware.rcs@2.0.so
+vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
+vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE_SUFFIX=_vendor
 
 # Power
 vendor/etc/task_profiles.json

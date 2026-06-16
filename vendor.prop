@@ -104,6 +104,17 @@ ro.vendor.arm.egl.configs.r8_g8_b8_a8_32bit_fixed.recordable=true
 # HWUI
 debug.hwui.use_hint_manager=true
 
+# IMS
+persist.vendor.anr.enhancement=0
+persist.vendor.mtk.volte.enable=1
+persist.vendor.mtk_ct_volte_support=3
+persist.vendor.mtk_dynamic_ims_switch=1
+persist.vendor.mtk_wfc_support=1
+persist.vendor.viwifi_support=1
+ro.vendor.md_auto_setup_ims=1
+ro.vendor.mtk_data_config=1
+persist.vendor.vilte_support=1
+
 # Media
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=512
