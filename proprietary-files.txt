@@ -176,6 +176,9 @@ vendor/lib64/libbt-vendor.so
 vendor/firmware/BT_FW.cfg
 
 # Connectivity
+vendor/etc/init/init.wmt_drv.rc
+vendor/etc/init/init.connfem.rc
+vendor/bin/conninfra_loader
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 
