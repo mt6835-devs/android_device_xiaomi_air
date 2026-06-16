@@ -1153,7 +1153,6 @@ vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
-vendor/lib64/mt6835/libmnl.so;SYMLINK=vendor/lib64/libmnl.so
 vendor/lib64/libcapctrl.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
@@ -1177,10 +1176,14 @@ vendor/lib64/libmtkrillog.so
 vendor/lib64/libmtkrilutils.so
 vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
+vendor/lib64/libmtknetutils.so
+vendor/lib64/libmtknetcap.so
+vendor/lib64/libmtksysutils.so
 vendor/lib64/libratconfig.so
 vendor/lib64/librcs_interface.so
 vendor/lib64/librcs_volte_core.so
 vendor/lib64/librilfusion.so
+vendor/lib64/libstorage_otp.so
 vendor/lib64/libsimlock.so
 vendor/lib64/libsysenv.so
 vendor/lib64/libtrm.so
