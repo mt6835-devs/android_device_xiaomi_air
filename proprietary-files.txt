@@ -984,6 +984,7 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 vendor/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so
+vendor/lib64/vendor.mediatek.hardware.pq_aidl-V3-ndk.so
 
 # Keymint
 vendor/bin/hw/android.hardware.identity-service.mitee@4.0

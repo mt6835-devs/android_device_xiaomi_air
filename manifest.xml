@@ -184,10 +184,9 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::INvram/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.pq</name>
-        <transport>hwbinder</transport>
-        <fqname>@2.15::IPictureQuality/default</fqname>
+    <hal format="aidl">
+        <name>vendor.mediatek.hardware.pq_aidl</name>
+        <fqname>IPictureQuality_AIDL/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.mtkradioex</name>
