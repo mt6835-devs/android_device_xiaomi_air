@@ -192,7 +192,11 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    WifiOverlay
+    FrameworksResOverlayAir \
+    SettingsResOverlayAir \
+    SystemUIOverlayAir \
+    TetheringConfigOverlayAir \
+    WifiOverlayAir
 
 PRODUCT_PACKAGES += \
     NcmTetheringOverlay
