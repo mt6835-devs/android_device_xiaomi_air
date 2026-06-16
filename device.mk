@@ -199,6 +199,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0.vendor \
