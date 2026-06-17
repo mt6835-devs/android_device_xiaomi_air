@@ -1062,11 +1062,13 @@ system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys-V5-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.xrp-V1-ndk.so
 vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk
 vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml
@@ -1079,6 +1081,7 @@ vendor/lib64/mt6835/libnir_neon_driver.so;SYMLINK=vendor/lib64/libnir_neon_drive
 vendor/lib64/APUWareApusysAidlServer.so
 vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/libOpenCL.so
+vendor/lib64/libSQLiteModule_VER_ALL.so
 vendor/lib64/libapu_mdw.so
 vendor/lib64/libapu_mdw_batch.so
 vendor/lib64/libapusys.so
