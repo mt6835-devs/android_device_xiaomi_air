@@ -24,8 +24,15 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.connectivity.rc",
-    src: "init.connectivity.rc",
+    name: "init.connectivity.common.rc",
+    src: "init.connectivity.common.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init_connectivity.rc",
+    src: "init_connectivity.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }
@@ -80,8 +87,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.mt6893.usb.rc",
-    src: "init.mt6893.usb.rc",
+    name: "init.mt6835.usb.rc",
+    src: "init.mt6835.usb.rc",
     relative_install_path: "init/hw",
     vendor: true,
 }

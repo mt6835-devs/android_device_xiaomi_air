@@ -166,7 +166,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6835 \
     fstab.mt6835.vendor_ramdisk \
-    init.connectivity.rc \
+    init.connectivity.common.rc \
+    init_connectivity.rc \
     init.mi_thermald.rc \
     init.modem.rc \
     init.mt6835.rc \
