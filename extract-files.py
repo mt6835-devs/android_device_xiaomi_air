@@ -51,7 +51,12 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('start', 'enable'),
     'vendor/bin/hw/android.hardware.graphics.composer@3.1-service': blob_fixup()
         .replace_needed('android.hardware.graphics.composer@2.1-resources.so', 'android.hardware.graphics.composer@2.1-resources-v34.so'),
-    ('vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
+    (
+        'vendor/bin/hw/android.hardware.neuralnetworks-shim-service-mtk',
+        'vendor/lib64/libtflite_mtk.so',
+        'vendor/lib64/libnvram.so',
+        'vendor/lib64/libsysenv.so'
+    ): blob_fixup()
         .add_needed('libbase_shim.so'),
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
         .add_needed('libutils-v32.so'),
