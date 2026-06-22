@@ -4,9 +4,10 @@
       "Name": "CPULittleClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
       "Values": [
-        "-1",
         "2000000",
-        "1700000"
+        "1800000",
+        "1700000",
+        "1600000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -15,9 +16,11 @@
       "Name": "CPULittleClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
       "Values": [
+        "-1",
         "1500000",
         "1200000",
-        "-1"
+        "950000",
+        "650000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -26,9 +29,10 @@
       "Name": "CPUBigClusterMaxFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq",
       "Values": [
-        "-1",
         "2200000",
-        "2000000"
+        "2000000",
+        "1800000",
+        "1600000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -37,9 +41,11 @@
       "Name": "CPUBigClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq",
       "Values": [
+        "-1",
         "1400000",
+        "1200000",
         "1000000",
-        "-1"
+        "700000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -59,7 +65,8 @@
       "Name": "Policy0DownRate",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/sugov_ext/down_rate_limit_us",
       "Values": [
-        "1000",
+        "5000",
+        "20000",
         "60000",
         "0"
       ],
@@ -81,7 +88,8 @@
       "Name": "Policy6DownRate",
       "Path": "/sys/devices/system/cpu/cpufreq/policy6/sugov_ext/down_rate_limit_us",
       "Values": [
-        "1000",
+        "5000",
+        "20000",
         "60000",
         "0"
       ],
@@ -92,12 +100,12 @@
       "Name": "TopAppUclampMin",
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
       "Values": [
-        "100",
-        "75",
-        "50",
-        "40",
+        "0",
         "25",
-        "0"
+        "40",
+        "50",
+        "75",
+        "100"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -106,11 +114,11 @@
       "Name": "ForegroundUclampMin",
       "Path": "/dev/cpuctl/foreground/cpu.uclamp.min",
       "Values": [
-        "100",
-        "75",
-        "50",
+        "0",
         "25",
-        "0"
+        "50",
+        "75",
+        "100"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -131,112 +139,6 @@
       "Values": [
         "0",
         "1"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TouchBoostEnable",
-      "Path": "/proc/touch_boost/enable",
-      "Values": [
-        "0",
-        "1"
-      ],
-      "DefaultIndex": 1,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TouchBoostDuration",
-      "Path": "/proc/touch_boost/boost_duration",
-      "Values": [
-        "200",
-        "150",
-        "100"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TouchBoostActiveTime",
-      "Path": "/proc/touch_boost/active_time",
-      "Values": [
-        "100",
-        "200",
-        "50"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TouchBoostFG",
-      "Path": "/proc/touch_boost/boost_fg",
-      "Values": [
-        "80",
-        "100",
-        "50"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TouchBoostTA",
-      "Path": "/proc/touch_boost/boost_ta",
-      "Values": [
-        "80",
-        "100",
-        "50"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TouchBoostCluster0Opp",
-      "Path": "/proc/touch_boost/boost_opp_cluster_0",
-      "Values": [
-        "2",
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TouchBoostCluster1Opp",
-      "Path": "/proc/touch_boost/boost_opp_cluster_1",
-      "Values": [
-        "2",
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TouchBoostDeboostWhenRender",
-      "Path": "/proc/touch_boost/deboost_when_render",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TouchBoostIdlePreferFG",
-      "Path": "/proc/touch_boost/idleprefer_fg",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "TouchBoostIdlePreferTA",
-      "Path": "/proc/touch_boost/idleprefer_ta",
-      "Values": [
-        "1",
-        "0"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -328,19 +230,19 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPULittleClusterMaxFreq",
       "Duration": 0,
-      "Value": "1700000"
+      "Value": "1800000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
-      "Value": "1200000"
+      "Value": "1500000"
     },
     {
       "PowerHint": "INTERACTION",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 0,
-      "Value": "1000000"
+      "Value": "1200000"
     },
     {
       "PowerHint": "INTERACTION",
@@ -377,6 +279,36 @@
       "Node": "Policy6UpRate",
       "Duration": 0,
       "Value": "0"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "Policy0DownRate",
+      "Duration": 0,
+      "Value": "20000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "Policy6DownRate",
+      "Duration": 0,
+      "Value": "20000"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "GPUSchedPeriod",
+      "Duration": 0,
+      "Value": "50"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "GPUDVFSInterval",
+      "Duration": 0,
+      "Value": "50"
+    },
+    {
+      "PowerHint": "INTERACTION",
+      "Node": "GPUSchedMode",
+      "Duration": 0,
+      "Value": "1"
     },
     {
       "PowerHint": "LAUNCH",
@@ -439,64 +371,10 @@
       "Value": "60000"
     },
     {
-      "PowerHint": "LAUNCH",
-      "Node": "TouchBoostEnable",
-      "Duration": 3000,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TouchBoostDuration",
-      "Duration": 3000,
-      "Value": "200"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TouchBoostActiveTime",
-      "Duration": 3000,
-      "Value": "100"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TouchBoostFG",
-      "Duration": 3000,
-      "Value": "80"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TouchBoostTA",
-      "Duration": 3000,
-      "Value": "80"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TouchBoostCluster0Opp",
-      "Duration": 3000,
-      "Value": "2"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TouchBoostCluster1Opp",
-      "Duration": 3000,
-      "Value": "2"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TouchBoostDeboostWhenRender",
-      "Duration": 3000,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TouchBoostIdlePreferFG",
-      "Duration": 3000,
-      "Value": "1"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TouchBoostIdlePreferTA",
-      "Duration": 3000,
-      "Value": "1"
+      "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
+      "Node": "PowerHALAudioState",
+      "Duration": 0,
+      "Value": "AUDIO_STREAMING_LOW_LATENCY"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -514,7 +392,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUDVFSInterval",
       "Duration": 0,
-      "Value": "75"
+      "Value": "50"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
