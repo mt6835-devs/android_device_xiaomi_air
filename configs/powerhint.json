@@ -167,16 +167,6 @@
         ""
       ],
       "Type": "Property"
-    },
-    {
-      "Name": "DoubleTapToWake",
-      "Path": "/proc/tp_gesture",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
     }
   ],
   "Actions": [
@@ -329,12 +319,6 @@
       "Node": "PowerHALRenderingState",
       "Duration": 0,
       "Value": "EXPENSIVE_RENDERING"
-    },
-    {
-      "PowerHint": "DOUBLE_TAP_TO_WAKE",
-      "Node": "DoubleTapToWake",
-      "Duration": 0,
-      "Value": "1"
     }
   ]
 }
