@@ -1041,7 +1041,6 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.7.so
 
 # Neural Networks
-system/etc/public.libraries-mtk.txt
 system_ext/lib64/libapuwareapusys.mtk.so
 system_ext/lib64/libapuwareapusys_v2.mtk.so
 system_ext/lib64/libapuwarehmp.mtk.so
