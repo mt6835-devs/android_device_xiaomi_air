@@ -1,0 +1,4 @@
+# Xiaomi/MIUI Properties
+ro.product.marketname                    u:object_r:vendor_mi_prop:s0
+ro.mi.os.version.code                    u:object_r:vendor_mi_prop:s0
+ro.product.mod_device                    u:object_r:vendor_mi_prop:s0
