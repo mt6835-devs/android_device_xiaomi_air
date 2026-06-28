@@ -16,7 +16,6 @@
       "Name": "CPULittleClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
       "Values": [
-        "-1",
         "1500000",
         "1200000",
         "950000",
@@ -41,7 +40,6 @@
       "Name": "CPUBigClusterMinFreq",
       "Path": "/sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq",
       "Values": [
-        "-1",
         "1400000",
         "1200000",
         "1000000",
@@ -139,38 +137,6 @@
       "Values": [
         "0",
         "1"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "GPUSchedMode",
-      "Path": "/sys/devices/platform/soc/13000000.mali/js_ctx_scheduling_mode",
-      "Values": [
-        "0",
-        "1"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "GPUSchedPeriod",
-      "Path": "/sys/devices/platform/soc/13000000.mali/js_scheduling_period",
-      "Values": [
-        "100",
-        "75",
-        "50"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "GPUDVFSInterval",
-      "Path": "/sys/devices/platform/soc/13000000.mali/dvfs_period",
-      "Values": [
-        "100",
-        "75",
-        "50"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -293,24 +259,6 @@
       "Value": "20000"
     },
     {
-      "PowerHint": "INTERACTION",
-      "Node": "GPUSchedPeriod",
-      "Duration": 0,
-      "Value": "50"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "GPUDVFSInterval",
-      "Duration": 0,
-      "Value": "50"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "GPUSchedMode",
-      "Duration": 0,
-      "Value": "1"
-    },
-    {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 3000,
@@ -381,24 +329,6 @@
       "Node": "PowerHALRenderingState",
       "Duration": 0,
       "Value": "EXPENSIVE_RENDERING"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "GPUSchedPeriod",
-      "Duration": 0,
-      "Value": "50"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "GPUDVFSInterval",
-      "Duration": 0,
-      "Value": "50"
-    },
-    {
-      "PowerHint": "EXPENSIVE_RENDERING",
-      "Node": "GPUSchedMode",
-      "Duration": 0,
-      "Value": "1"
     },
     {
       "PowerHint": "DOUBLE_TAP_TO_WAKE",
