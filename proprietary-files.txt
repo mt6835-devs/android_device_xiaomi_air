@@ -973,6 +973,7 @@ vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so:vendor/lib64/libformatter-v33.so;FIX_SONAME
 
 # Picture Quality
+vendor/lib64/android.frameworks.displayservice@1.0.so
 vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service
 vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc
 vendor/etc/AbnormalDisplayLog_dynamic.xml
