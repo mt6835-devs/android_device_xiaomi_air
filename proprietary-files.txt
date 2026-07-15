@@ -970,7 +970,7 @@ vendor/lib64/libcodec2_vpp_AISR_plugin.so
 vendor/lib64/libcodec2_vpp_mi_plugin.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
-vendor/lib64/libformatter.so
+vendor/lib64/libformatter.so:vendor/lib64/libformatter-v33.so;FIX_SONAME
 
 # Picture Quality
 vendor/bin/hw/vendor.mediatek.hardware.pq_aidl-service

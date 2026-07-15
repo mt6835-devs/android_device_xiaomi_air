@@ -116,6 +116,8 @@ blob_fixups: blob_fixups_user_type = {
             "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so",
             "vendor.goodix.hardware.biometrics.fingerprint@2.1.so"
         ),
+    ('vendor/lib64/libcodec2_mtk_vdec.so', 'vendor/lib64/libcodec2_mtk_venc.so'): blob_fixup()
+        .replace_needed('libformatter.so', 'libformatter-v33.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
