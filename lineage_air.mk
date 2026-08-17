@@ -24,3 +24,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/air_global/air:15/AP3A.240905.015.A2/OS2.0.206.0.VGQMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+WITH_GMS=true
+TARGET_USES_PICO_GAPPS=true
