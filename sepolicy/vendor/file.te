@@ -4,3 +4,7 @@ type camera_persist_file, file_type;
 
 # Touchscreen
 type proc_tp_gesture, fs_type, proc_type;
+
+# Battery
+type sysfs_battery, fs_type, sysfs_type;
+type sysfs_battery_writable, fs_type, sysfs_type;
