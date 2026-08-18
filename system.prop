@@ -1,0 +1,31 @@
+# Display
+persist.sys.brightness.low.gamma=true
+persist.sys.sf.color_mode=0
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=0
+
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.vendor.wfc.sys_wfc_support=1
+
+# MTK transition lagfix
+persist.sys.activity_anim_perf_override=true
+
+# Phantom process monitoring
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
+# Scroll Optimiser
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
+
+# SurfaceFlinger
+persist.sys.sf.cpupolicy.min_120=512
+persist.sys.sf.cpupolicy.min_60=350
+persist.sys.sf.cpupolicy.lowbound_uclamp_min=512
+persist.sys.sf.cpupolicy.min_boost=512
+persist.sys.sf.cpupolicy.upbound_uclamp_min=768
