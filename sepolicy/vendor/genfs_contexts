@@ -47,5 +47,20 @@ genfscon sysfs /devices/platform/soc/11f02000.i2c/i2c-10/10-0053/rt9490-chg.1.au
 genfscon sysfs /devices/platform/11e01000.i2c/i2c-5/5-0034/11e01000.i2c:mt6375@34:tcpc/tcpc/type_c_port0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/11e01000.i2c/i2c-5/5-0034/11e01000.i2c:mt6375@34:tcpc/wakeup/ u:object_r:sysfs_wakeup:s0
 
+# Wakeup sources
+genfscon sysfs /devices/platform/charger/power_supply/bms/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/mtk-mst-hvdiv-chg/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/mtk-slv-hvdiv-chg/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/charger/power_supply/usb/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11b20000.i2c/i2c-3/3-0028/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11b21000.i2c/i2c-5/5-006a/power_supply/primary_chg/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11b21000.i2c/i2c-5/5-006a/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11ed0000.i2c/i2c-0/0-004e/tcpc/type_c_port0/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11ed0000.i2c/i2c-0/0-004e/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-04/mt6377-gauge/power_supply/battery/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-04/mt6377-gauge/power_supply/mtk-gauge/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-04/mt6377-rtc/rtc/rtc0/alarmtimer.0.auto/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-04/mt6377-rtc/wakeup u:object_r:sysfs_wakeup:s0
+
 # DT2W
 genfscon proc /tp_gesture u:object_r:proc_touchpad:s0
