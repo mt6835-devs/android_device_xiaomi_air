@@ -59,16 +59,16 @@ TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
-    android.hardware.audio@7.1-impl \
-    android.hardware.audio.effect@7.0-impl
+    android.hardware.audio@7.1-impl:32 \
+    android.hardware.audio.effect@7.0-impl:32
 
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio-impl \
-    audio.bluetooth.default
+    android.hardware.bluetooth.audio-impl:32 \
+    audio.bluetooth.default:32
 
 PRODUCT_PACKAGES += \
-    audio_policy.stub \
-    audio.usbv2.default
+    audio_policy.stub:32 \
+    audio.usbv2.default:32
 
 PRODUCT_PACKAGES += \
     MtkInCallService
