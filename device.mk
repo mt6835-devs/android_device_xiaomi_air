@@ -229,8 +229,12 @@ PRODUCT_PACKAGES += \
     WifiOverlayAir \
     NcmTetheringOverlay
 
+PRODUCT_PACKAGES += \
+    LineageSettingsProviderOverlayAir
+
 PRODUCT_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
