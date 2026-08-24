@@ -351,6 +351,10 @@
          that can be set by the user. -->
     <item name="config_screenBrightnessDimFloat" format="float" type="dimen">8.54597E-4</item>
 
+    <!-- The maximum range of gamma adjustment possible using the screen
+         auto-brightness adjustment setting. -->
+    <fraction name="config_autoBrightnessAdjustmentMaxGamma">100.0%</fraction>
+
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
