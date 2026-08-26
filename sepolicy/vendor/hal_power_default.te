@@ -12,3 +12,7 @@ set_prop(hal_power_default, vendor_power_prop)
 # /proc/cpufreq/*
 allow hal_power_default proc_cpufreq:dir search;
 allow hal_power_default proc_cpufreq:file rw_file_perms;
+
+# DT2W
+allow hal_power_default proc_touchpad:dir search;
+allow hal_power_default proc_touchpad:file rw_file_perms;
