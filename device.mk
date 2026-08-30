@@ -379,4 +379,4 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/air/air-vendor.mk)
-$(call inherit-product, device/xiaomi/air-miuicamera/device.mk)
+$(call inherit-product-if-exists, device/xiaomi/air-miuicamera/device.mk)
