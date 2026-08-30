@@ -237,4 +237,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit the proprietary files
 include vendor/xiaomi/air/BoardConfigVendor.mk
-include device/xiaomi/air-miuicamera/BoardConfig.mk
+-include device/xiaomi/air-miuicamera/BoardConfig.mk
