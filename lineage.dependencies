@@ -1,0 +1,30 @@
+[
+    { "repository": "https://github.com/mt6835-devs/android_vendor_xiaomi_air", 
+        "target_path": "vendor/xiaomi/air", "branch": "lineage-24.0", 
+        "clone_depth": "1"
+    },
+    { "repository": 
+        "https://github.com/mt6835-devs/android_device_xiaomi_air-kernel", 
+        "target_path": "device/xiaomi/air-kernel", "clone_depth": "1"
+    },
+    { "repository": "https://github.com/LineageOS/android_hardware_xiaomi", 
+        "target_path": "hardware/xiaomi", "clone_depth": "1"
+    },
+    { "repository": "https://github.com/mt6835-devs/android_hardware_mediatek", 
+        "target_path": "hardware/mediatek", "branch": "lineage-24.0", 
+        "clone_depth": "1"
+    },
+    { "repository": 
+        "https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr", 
+        "target_path": "device/mediatek/sepolicy_vndr", "branch": 
+        "lineage-24.0", "clone_depth": "1"
+    },
+    { "repository": 
+        "https://github.com/mt6835-devs/android_vendor_mediatek_ims", 
+        "target_path": "vendor/mediatek/ims", "clone_depth": "1"
+    },
+    { "repository": 
+        "https://github.com/mt6835-devs/packages_apps_ViPER4AndroidFX", 
+        "target_path": "packages/apps/ViPER4AndroidFX", "clone_depth": "1"
+    }
+]
