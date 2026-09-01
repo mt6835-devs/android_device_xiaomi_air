@@ -13,3 +13,10 @@ ro.vendor.oem.meid                       u:object_r:vendor_mtk_radio_prop:s0
 
 # Thermal
 vendor.sys.thermal.data.path             u:object_r:vendor_thermal_prop:s0
+
+# Fingerprint
+vendor.sys.fp                            u:object_r:vendor_silead_fp_prop:s0
+persist.vendor.sys.fp.vendor             u:object_r:vendor_silead_fp_prop:s0 
+persist.vendor.sys.fp.uid                u:object_r:vendor_silead_fp_prop:s0 
+persist.vendor.sys.fp.info               u:object_r:vendor_silead_fp_prop:s0 
+persist.vendor.sys.fp.module             u:object_r:vendor_silead_fp_prop:s0
