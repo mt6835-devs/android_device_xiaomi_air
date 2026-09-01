@@ -1,0 +1,1 @@
+allow system_server sysfs_fs_chg_file:file r_file_perms;
