@@ -363,6 +363,8 @@ vendor/lib64/libc++_shared.so
 vendor/lib64/libmialgo_ai_vision.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
+vendor/lib64/libmialgoengine.so
+vendor/lib64/libmialgoengine2.so
 vendor/lib64/libmorpho_HdrChecker.so
 
 # Camera (MTKCAM)

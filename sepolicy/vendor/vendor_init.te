@@ -1,2 +1,6 @@
 rw_dir_file(vendor_init, sysfs_ged)
 rw_dir_file(vendor_init, proc)
+allow vendor_init device:chr_file getattr;
+allow vendor_init vendor_de_file:dir create_dir_perms;
+allow vendor_init vendor_de_file:file create_file_perms;
+set_prop(vendor_init, vendor_camera_prop)
