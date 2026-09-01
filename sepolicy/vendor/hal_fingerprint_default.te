@@ -1,1 +1,4 @@
-allow hal_fingerprint_default goodix_fingerprint_hwservice:hwservice_manager find;
+allow hal_fingerprint_default goodix_fingerprint_hwservice:hwservice_manager { find add };
+set_prop(hal_fingerprint_default, vendor_silead_fp_prop)
+allow hal_fingerprint_default silead_fpd_device:chr_file { ioctl open read write getattr };
+allow hal_fingerprint_default sysfs_power_supply:dir search;
