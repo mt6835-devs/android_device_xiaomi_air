@@ -107,6 +107,7 @@ ro.com.google.ime.kb_pad_port_b=1
 ro.vendor.gps.chrdev=gps_drv_stp
 
 # Graphics
+debug.renderengine.backend=skiaglthreaded
 ro.vendor.mtk_aal_support=1
 ro.vendor.display.type=lcd
 ro.vendor.colorpick_adjust=true
