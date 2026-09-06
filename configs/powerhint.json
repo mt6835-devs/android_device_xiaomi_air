@@ -49,47 +49,19 @@
       "ResetOnInit": true
     },
     {
-      "Name": "Policy0UpRate",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy0/sugov_ext/up_rate_limit_us",
+      "Name": "Policy0Rate",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy0/schedutil/rate_limit_us",
       "Values": [
-        "1000",
-        "500",
-        "0"
+        "1000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
     },
     {
-      "Name": "Policy0DownRate",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy0/sugov_ext/down_rate_limit_us",
+      "Name": "Policy6Rate",
+      "Path": "/sys/devices/system/cpu/cpufreq/policy6/schedutil/rate_limit_us",
       "Values": [
-        "5000",
-        "20000",
-        "60000",
-        "0"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "Policy6UpRate",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy6/sugov_ext/up_rate_limit_us",
-      "Values": [
-        "1000",
-        "500",
-        "0"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
-      "Name": "Policy6DownRate",
-      "Path": "/sys/devices/system/cpu/cpufreq/policy6/sugov_ext/down_rate_limit_us",
-      "Values": [
-        "5000",
-        "20000",
-        "60000",
-        "0"
+        "1000"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -236,27 +208,15 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "Policy0UpRate",
+      "Node": "Policy0Rate",
       "Duration": 0,
-      "Value": "0"
+      "Value": "1000"
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "Policy6UpRate",
+      "Node": "Policy6Rate",
       "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "Policy0DownRate",
-      "Duration": 0,
-      "Value": "20000"
-    },
-    {
-      "PowerHint": "INTERACTION",
-      "Node": "Policy6DownRate",
-      "Duration": 0,
-      "Value": "20000"
+      "Value": "1000"
     },
     {
       "PowerHint": "LAUNCH",
@@ -296,27 +256,15 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "Policy0UpRate",
+      "Node": "Policy0Rate",
       "Duration": 3000,
-      "Value": "0"
+      "Value": "1000"
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "Policy6UpRate",
+      "Node": "Policy6Rate",
       "Duration": 3000,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "Policy0DownRate",
-      "Duration": 3000,
-      "Value": "60000"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "Policy6DownRate",
-      "Duration": 3000,
-      "Value": "60000"
+      "Value": "1000"
     },
     {
       "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
