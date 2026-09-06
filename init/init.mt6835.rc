@@ -678,10 +678,6 @@ on property:init.svc.surfaceflinger=restarting
     # Power Manager
     write /sys/power/pm_freeze_timeout 2000
 
-    # Touch feature
-    chown system system /dev/xiaomi-touch
-    chmod 0660 /dev/xiaomi-touch
-
 # end boot time fs tune
 on property:sys.boot_completed=1
     # Disable statsd service to prevent additional battery drain
