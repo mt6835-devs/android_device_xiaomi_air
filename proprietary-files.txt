@@ -1161,7 +1161,6 @@ vendor/etc/init/init.cccifsd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/mtkrild.rc
-vendor/etc/init/muxreport.rc
 vendor/etc/init/networksetting.rc
 vendor/etc/MNL_Config.xml
 vendor/etc/ecc_list.xml
