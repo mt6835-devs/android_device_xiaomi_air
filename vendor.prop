@@ -158,6 +158,13 @@ ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_data_config=1
 persist.vendor.vilte_support=1
 
+# LMKD
+ro.lmk.kill_heaviest_task=true
+ro.lmk.use_psi=true
+ro.lmk.use_minfree_levels=false
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.downgrade_pressure=30
+
 # Media
 debug.stagefright.c2inputsurface=-1
 media.c2.dmabuf.padding=512
