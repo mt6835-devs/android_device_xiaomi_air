@@ -4,6 +4,8 @@ vendor.audiomediatek. u:object_r:vendor_audioserver_prop:s0
 # Camera
 persist.vendor.camera. u:object_r:vendor_camera_persist_prop:s0
 vendor.camera. u:object_r:vendor_camera_prop:s0
+vendor.debug.af.otp.data          u:object_r:vendor_debug_af_prop:s0
+vendor.debug.af.foucus.position   u:object_r:vendor_debug_af_prop:s0
 
 # RIL
 ro.vendor.oem.sno                        u:object_r:vendor_mtk_radio_prop:s0
