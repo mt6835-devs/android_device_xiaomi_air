@@ -149,7 +149,7 @@ debug.hwui.target_cpu_time_percent=30
 
 # IMS
 persist.vendor.anr.enhancement=0
-persist.vendor.mtk.volte.enable=1
+persist.vendor.mtk.volte.enable=3
 persist.vendor.mtk_ct_volte_support=3
 persist.vendor.mtk_dynamic_ims_switch=1
 persist.vendor.mtk_wfc_support=1
@@ -157,6 +157,11 @@ persist.vendor.viwifi_support=1
 ro.vendor.md_auto_setup_ims=1
 ro.vendor.mtk_data_config=1
 persist.vendor.vilte_support=1
+persist.vendor.ims_support=1
+persist.vendor.mtk.vilte.enable=3
+persist.vendor.volte_support=1
+persist.vendor.camera.3rdvideocall.scenes=false
+ro.vendor.vt_hevc_support=1
 
 # LMKD
 ro.lmk.kill_heaviest_task=true
@@ -232,6 +237,7 @@ persist.vendor.radio.dynamic_sar=1
 persist.vendor.radio.mtk_dsbp_support=3
 persist.vendor.factory.GB2312=yes
 persist.vendor.mims_support=2
+ro.vendor.md_mims_support=2
 ro.vendor.mtk_c2k_lte_mode=2
 ro.vendor.mtk_c2k_support=1
 persist.vendor.radio.flashless.fsm=0
