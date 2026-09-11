@@ -22,3 +22,5 @@ persist.vendor.sys.fp.vendor             u:object_r:vendor_silead_fp_prop:s0
 persist.vendor.sys.fp.uid                u:object_r:vendor_silead_fp_prop:s0 
 persist.vendor.sys.fp.info               u:object_r:vendor_silead_fp_prop:s0 
 persist.vendor.sys.fp.module             u:object_r:vendor_silead_fp_prop:s0
+
+persist.vendor.dc_backlight.enable u:object_r:vendor_display_prop:s0

@@ -64,3 +64,9 @@ genfscon sysfs /devices/platform/soc/1c804000.spmi/spmi-0/0-04/mt6377-rtc/wakeup
 
 # DT2W
 genfscon proc /tp_gesture u:object_r:proc_tp:s0
+
+# LiveDisplay
+genfscon sysfs /devices/virtual/mi_display/disp_feature/disp-DSI-0/disp_param u:object_r:vendor_sysfs_livedisplay:s0
+
+# Xiaomi mi_display LiveDisplay controls
+genfscon sysfs /class/mi_display/disp-DSI-0/dc_status u:object_r:vendor_sysfs_livedisplay:s0
