@@ -193,6 +193,9 @@ $(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,fal
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.mt6835
 
+# MTK GED
+$(call soong_config_set_bool,libgui,support_mtk_ged_kpi,true)
+
 # Init
 PRODUCT_PACKAGES += \
     chipinfo \
