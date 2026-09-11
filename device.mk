@@ -260,6 +260,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
+# MTK GED
+$(call soong_config_set_bool,libgui,support_mtk_ged_kpi,true)
+
 # Radio
 PRODUCT_PACKAGES += \
     vendor_mdota_symlink
