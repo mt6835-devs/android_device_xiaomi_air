@@ -230,6 +230,7 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayAir \
     TetheringConfigOverlayAir \
     WifiOverlayAir \
+    DeviceAsWebcamOverlayAir \
     NcmTetheringOverlay
 
 PRODUCT_PACKAGE_OVERLAYS += \
