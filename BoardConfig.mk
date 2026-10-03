@@ -72,8 +72,6 @@ BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6835
-TARGET_KERNEL_CLANG_VERSION := r450784e
-TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_CONFIG := \
 	gki_defconfig \
 	mgk_64_k515_defconfig
@@ -89,7 +87,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.lz4
 
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/mt6835-modules
 TARGET_KERNEL_EXT_MODULES := \
-    connectivity/bt/linux_v2 \
     connectivity/bt/mt66xx/wmt \
     connectivity/common \
     connectivity/connfem \
