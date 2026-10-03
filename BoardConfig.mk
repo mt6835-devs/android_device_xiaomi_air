@@ -89,17 +89,28 @@ BOARD_KERNEL_IMAGE_NAME := Image.lz4
 
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/mt6835-modules
 TARGET_KERNEL_EXT_MODULES := \
+    connectivity/bt/linux_v2 \
     connectivity/bt/mt66xx/wmt \
     connectivity/common \
     connectivity/connfem \
+    connectivity/conninfra \
     connectivity/fmradio \
+    connectivity/gps/data_link/plat/v010 \
+    connectivity/gps/data_link/plat/v030 \
+    connectivity/gps/data_link/plat/v050 \
+    connectivity/gps/data_link/plat/v051 \
+    connectivity/gps/data_link/plat/v060 \
+    connectivity/gps/data_link/plat/v061 \
     connectivity/gps/gps_pwr \
+    connectivity/gps/gps_scp \
     connectivity/gps/gps_stp \
     connectivity/wlan/adaptor \
+    connectivity/wlan/adaptor/wlan_page_pool \
     connectivity/wlan/core/gen4m \
     fpsgo_cus \
-    met_drv_v3 \
-    gpu
+    gpu \
+    hbt_driver_cus \
+    met_drv_v3
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.vendor))
