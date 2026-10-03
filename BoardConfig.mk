@@ -4,7 +4,6 @@
 #
 
 DEVICE_PATH := device/xiaomi/air
-KERNEL_PATH := device/xiaomi/air-kernel
 
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
@@ -70,30 +69,42 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
 
 # Kernel
-TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/Image.gz
-PRODUCT_COPY_FILES += \
-    $(TARGET_PREBUILT_KERNEL):kernel
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/xiaomi/mt6835
+TARGET_KERNEL_CLANG_VERSION := r450784e
+TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
+TARGET_KERNEL_CONFIG := \
+	gki_defconfig \
+	mgk_64_k515_defconfig
 
-# Kill lineage kernel build task while preserving kernel
-TARGET_NO_KERNEL_OVERRIDE := true
+# Kernel DTB / DTBO
+TARGET_NEEDS_DTBOIMAGE := true
+TARGET_KERNEL_DTBO := mediatek/dtbo.img
+TARGET_KERNEL_DTBO_PREFIX := dts/
+TARGET_KERNEL_DTB := \
+    mediatek/mt6835.dtb
 
-# Workaround to make lineage's soong generator work
-TARGET_KERNEL_SOURCE := device/xiaomi/air-kernel/kernel-headers
+BOARD_KERNEL_IMAGE_NAME := Image.lz4
 
-# Board Info
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-
-# DTB/DTBO
-BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)/dtb
-BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
-BOARD_MKBOOTIMG_ARGS += --dtb $(BOARD_PREBUILT_DTBIMAGE_DIR)/mt6835.dtb
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/mt6835-modules
+TARGET_KERNEL_EXT_MODULES := \
+    connectivity/bt/mt66xx/wmt \
+    connectivity/common \
+    connectivity/connfem \
+    connectivity/fmradio \
+    connectivity/gps/gps_pwr \
+    connectivity/gps/gps_stp \
+    connectivity/wlan/adaptor \
+    connectivity/wlan/core/gen4m \
+    fpsgo_cus \
+    met_drv_v3 \
+    gpu
 
 # Kernel modules
-BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/vendor/*.ko)
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules.load.vendor))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(wildcard $(KERNEL_PATH)/vendor_ramdisk/*.ko)
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules.load.vendor_ramdisk))
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules.load.recovery))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.vendor))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.vendor_ramdisk))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules/modules.load.recovery))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
 
 # Bootloader
