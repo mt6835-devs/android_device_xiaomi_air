@@ -1,1 +1,2 @@
 get_prop(ccci_rpcd, vendor_mi_prop)
+get_prop(ccci_rpcd, default_prop)
