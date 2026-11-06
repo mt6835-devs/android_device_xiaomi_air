@@ -3,3 +3,5 @@ rw_dir_file(vendor_init, proc)
 
 set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_telephony_prop)
+
+allow vendor_init vendor_userdir_file:dir { search write add_name };
