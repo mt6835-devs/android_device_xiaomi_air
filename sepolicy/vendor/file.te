@@ -1,3 +1,4 @@
 # Camera
 type vendor_camera_data_file, data_file_type, file_type;
 type camera_persist_file, file_type;
+type sysfs_palm_sensor, fs_type, sysfs_type;
