@@ -90,6 +90,18 @@ blob_fixups: blob_fixups_user_type = {
         .binary_regex_replace(
             re.escape(b'\xde\xf7\x00\x94\x88\x76\x46\x39'),
             b'\xde\xf7\x00\x94\x88\x96\x41\xb9',
+        )
+        .binary_regex_replace(
+            re.escape(b'\xfd\x7b\xbe\xa9\xf3\x0b\x00\xf9\xfd\x03\x00\x91\x31\x07\x00\x94'),
+            b'\x00\x00\x80\x52\xc0\x03\x5f\xd6\x1f\x20\x03\xd5\x1f\x20\x03\xd5',
+        )
+        .binary_regex_replace(
+            re.escape(b'\x48\x01\x00\xd0\x00\x01\x6b\x39\xc0\x03\x5f\xd6'),
+            b'\x00\x00\x80\x52\xc0\x03\x5f\xd6\x1f\x20\x03\xd5',
+        )
+        .binary_regex_replace(
+            re.escape(b'\x88\x66\x03\x94\x80\x02\x00\x36'),
+            b'\x88\x66\x03\x94\x14\x00\x00\x14',
         ),
     'vendor/lib64/hw/hwcomposer.mtk_common.so' : blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
