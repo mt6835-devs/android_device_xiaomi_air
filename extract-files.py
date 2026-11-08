@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+import re
+
 from extract_utils.file import File
 from extract_utils.fixups_blob import (
     blob_fixup,
@@ -64,7 +66,15 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libalsautils.so', 'libalsautils-stock.so')
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
         .binary_regex_replace(b'A2dpsuspendonly', b'A2dpSuspended\x00\x00')
-        .binary_regex_replace(b'BTAudiosuspend', b'A2dpSuspended\x00'),
+        .binary_regex_replace(b'BTAudiosuspend', b'A2dpSuspended\x00')
+        .binary_regex_replace(
+            re.escape(b'\x1f\x01\x10\x71\x01\x02\x00\x54\x00\x8f\x80\x52\x2b\x25\x01\x94\xf6\x03\x00\xaa\xe1\x03\x15\xaa\x14\x36\x01\x94\xf8\x00\x00\x14'),
+            b'\x69\x96\x41\xb9\xe9\x00\x00\x34\x0f\x00\x00\x14\x1f\x20\x03\xd5\x1f\x20\x03\xd5\x1f\x20\x03\xd5\x1f\x20\x03\xd5\x1f\x20\x03\xd5',
+        )
+        .binary_regex_replace(
+            re.escape(b'\x9f\x00\x13\x6b\x41\x01\x00\x54'),
+            b'\x0b\x00\x00\x14\x1f\x20\x03\xd5',
+        ),
     'vendor/lib64/hw/hwcomposer.mtk_common.so' : blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
     (
