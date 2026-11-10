@@ -112,7 +112,7 @@ bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
 bool setDeviceSpecificMode(Mode type, bool enabled) {
     switch (type) {
         case Mode::DOUBLE_TAP_TO_WAKE: {
-            bool success = android::base::WriteStringToFile(enabled ? "1" : "0", GESTURE_PATH);
+            bool success = ::android::base::WriteStringToFile(enabled ? "1" : "0", GESTURE_PATH);
             if (!success) {
                 LOG(WARNING) << "Failed to write to " << GESTURE_PATH << ": " << strerror(errno);
                 return setTouchMode(Touch_Doubletap_Mode, enabled ? 1 : 0);
