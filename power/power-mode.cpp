@@ -15,6 +15,7 @@
 // Touch device constants
 #define TOUCH_DEV_PATH "/dev/xiaomi-touch"
 #define TOUCH_ID 0
+#define GESTURE_PATH "/proc/tp_gesture"
 
 // IOCTL commands
 #define IOCTL_SET_TOUCH_ID 0x40005403
@@ -111,7 +112,12 @@ bool isDeviceSpecificModeSupported(Mode type, bool* _aidl_return) {
 bool setDeviceSpecificMode(Mode type, bool enabled) {
     switch (type) {
         case Mode::DOUBLE_TAP_TO_WAKE: {
-            return setTouchMode(Touch_Doubletap_Mode, enabled ? 1 : 0);
+            bool success = android::base::WriteStringToFile(enabled ? "1" : "0", GESTURE_PATH);
+            if (!success) {
+                LOG(WARNING) << "Failed to write to " << GESTURE_PATH << ": " << strerror(errno);
+                return setTouchMode(Touch_Doubletap_Mode, enabled ? 1 : 0);
+            }
+            return true;
         }
         default:
             return false;
