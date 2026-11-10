@@ -589,6 +589,12 @@ on boot
     chmod 0664 /sys/class/leds/lcd-backlight/brightness
     chown system system /sys/class/leds/lcd-backlight/brightness
 
+    # Touch feature
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
+    chown system system /proc/tp_gesture
+    chmod 0660 /proc/tp_gesture
+
     # For vibrator
     chown system system /sys/class/leds/vibrator/trigger
 
@@ -684,12 +690,6 @@ on property:init.svc.surfaceflinger=restarting
     chown system radio /dev/ttyGS1
     # Power Manager
     write /sys/power/pm_freeze_timeout 2000
-
-    # Touch feature
-    chown system system /dev/xiaomi-touch
-    chmod 0660 /dev/xiaomi-touch
-    chown system system /proc/tp_gesture
-    chmod 0660 /proc/tp_gesture
 
 # end boot time fs tune
 on property:sys.boot_completed=1
