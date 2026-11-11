@@ -1,0 +1,3 @@
+allow vtservice media_quality_service:service_manager find;
+allow vtservice package_native_service:service_manager find;
+get_prop(vtservice, vendor_default_prop)
