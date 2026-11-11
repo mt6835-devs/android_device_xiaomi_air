@@ -47,8 +47,18 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/bin/hw/android.hardware.security.keymint@2.0-service.mitee': blob_fixup()
         .replace_needed('android.hardware.security.keymint-V2-ndk.so', 'android.hardware.security.keymint-V3-ndk.so')
         .add_needed('android.hardware.security.rkp-V3-ndk.so'),
+    (
+        'system_ext/lib64/libmtk_vt_service.so',
+        'system_ext/lib64/libmtk_vt_wrapper.so',
+        'system_ext/lib/libmtk_vt_wrapper.so',
+    ): blob_fixup()
+        .replace_needed('libhidltransport.so', 'libhidlbase.so'),
     'system_ext/lib64/libsink.so': blob_fixup()
-        .add_needed('libaudioclient_shim.so'),
+        .binary_regex_replace(
+            b'_ZN7android10AudioTrackC1E19audio_stream_type_tj14audio_format_t20audio_channel_mask_tm20audio_output_flags_tRKNS_2wpINS0_19IAudioTrackCallbackEEEi15audio_session_tNS0_13transfer_typeEPK20audio_offload_info_tRKNS_7content22AttributionSourceStateEPK18audio_attributes_tbfiRKNSt3__112basic_stringIcNSM_11char_traitsIcEENSM_9allocatorIcEEEE',
+            b'_ZN7android10AudioTrackC1E19audio_stream_type_tj14audio_format_t20audio_channel_mask_tm20audio_output_flags_tRKNS_2wpINS0_19IAudioTrackCallbackEEEi15audio_session_tNS0_13transfer_typeEPK20audio_offload_info_tRKNS_7content22AttributionSourceStateEPK18audio_attributes_tbfi'
+            + b'\x00' * 66,
+        ),
     'system_ext/lib64/libsource.so': blob_fixup()
         .binary_regex_replace(
             re.escape(b'\xb3F\x04\xb9\x08\x00@\xf9\x08-@\xf9\x00\x01?\xd6'),

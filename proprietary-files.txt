@@ -1231,6 +1231,28 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex.voice-V1-ndk.so
 
 # Radio (IMS)
+system_ext/bin/vtservice
+system_ext/etc/init/init.vtservice.rc
+system_ext/lib64/libcomutils.so
+system_ext/lib64/libimsma.so
+system_ext/lib64/libimsma_adapt.so
+system_ext/lib64/libimsma_rtp.so
+system_ext/lib64/libimsma_socketwrapper.so
+system_ext/lib64/libmtk_vt_service.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libsignal.so
+system_ext/lib64/libsink.so
+system_ext/lib64/libsource.so
+system_ext/lib64/libvcodec_cap.so
+system_ext/lib64/libvcodec_capenc.so
+system_ext/lib64/libvt_avsync.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib/libmtk_vt_wrapper.so
+system_ext/lib/libvcodec_cap.so
+system_ext/lib/libvcodec_capenc.so
+system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/bin/hw/vtservice_hidl
 vendor/bin/volte_clientapi_ua
 vendor/bin/ipsec_mon
