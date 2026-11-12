@@ -248,6 +248,7 @@ PRODUCT_COPY_FILES += \
 $(call soong_config_set,power_libperfmgr,mode_extension_lib, //$(DEVICE_PATH):libperfmgr-ext-xiaomi)
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
+    libperfmgr.vendor \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
     libmtkperf_client_vendor \
     libmtkperf_client \
@@ -283,6 +284,7 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
+    hardware/google/pixel \
     hardware/google/pixel/pixelstats \
     hardware/google/pixel/power-libperfmgr \
     hardware/google/pixel/thermal \
@@ -308,8 +310,8 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.pixel \
-    thermal_symlinks \
-    pixelatoms-cpp
+    pixelatoms-cpp \
+    thermal_symlinks
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
