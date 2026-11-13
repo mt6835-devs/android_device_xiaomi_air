@@ -24,8 +24,8 @@
         <library name="haptic_generator" path="libhapticgenerator.so"/>
         <library name="pre_processing" path="libaudiopreprocessing.so"/>
         <library name="spatializer" path="libspatializer.so"/>
-        <!--ViPER4Android FX -->
-        <library name="v4a_re" path="libv4a_re.so"/>
+        <!--ViPER4Android FX RE-->
+        <library name="v4a_aidl" path="libv4a_aidl.so"/>
     </libraries>
 
     <!-- list of effects to load.
@@ -68,8 +68,8 @@
         <effect name="ns" library="pre_processing" uuid="c06c8400-8e06-11e0-9cb6-0002a5d5c51b"/>
         <effect name="agc" library="pre_processing" uuid="aa8130e0-66fc-11e0-bad0-0002a5d5c51b"/>
         <effect name="spatializer" library="spatializer" uuid="58151b10-6ae5-11ed-a1eb-0242ac120002"/>
-        <!--ViPER4Android FX -->
-        <effect name="v4a_standard_re" library="v4a_re" uuid="90380da3-8536-4744-a6a3-5731970e640f"/>
+        <!--ViPER4Android FX RE -->
+        <effect name="v4a_standard_aidl" library="v4a_aidl" uuid="90380da3-8536-4744-a6a3-5731970e640f" type="7261676f-6d75-7369-6364-28e2fd3ac39e"/>
     </effects>
 
     <!-- Audio pre processor configurations.
