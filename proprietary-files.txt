@@ -842,12 +842,13 @@ vendor/lib64/libwvaidl.so
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
 vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
 vendor/lib64/hw/fingerprint.goodix.default.so:vendor/lib64/hw/fingerprint.goodix.air.so;FIX_SONAME
-vendor/lib64/hw/fingerprint.silead.default.so
+vendor/lib64/hw/fingerprint.silead.default.so;SYMLINK=vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libmifpext.so
 vendor/lib64/libsl_fp_impl.so
+vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
 # FuelGauge
 vendor/bin/fuelgauged
@@ -1221,6 +1222,12 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex.voice-V1-ndk.so
 # Radio (IMS)
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
+system_ext/lib/libmtk_vt_wrapper.so
+system_ext/lib/libvcodec_cap.so
+system_ext/lib/libvcodec_capenc.so
+system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/libsink.so:system_ext/lib64/libsink-mtk.so;FIX_SONAME
 system_ext/lib64/libcomutils.so
 system_ext/lib64/libimsma.so
 system_ext/lib64/libimsma_adapt.so
@@ -1229,18 +1236,12 @@ system_ext/lib64/libimsma_socketwrapper.so
 system_ext/lib64/libmtk_vt_service.so
 system_ext/lib64/libmtk_vt_wrapper.so
 system_ext/lib64/libsignal.so
-system_ext/lib64/libsink.so:system_ext/lib64/libsink-mtk.so;FIX_SONAME
 system_ext/lib64/libsource.so
 system_ext/lib64/libvcodec_cap.so
 system_ext/lib64/libvcodec_capenc.so
 system_ext/lib64/libvt_avsync.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-system_ext/lib/libmtk_vt_wrapper.so
-system_ext/lib/libvcodec_cap.so
-system_ext/lib/libvcodec_capenc.so
-system_ext/lib/vendor.mediatek.hardware.videotelephony-V1-ndk.so
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/bin/hw/vtservice_hidl
 vendor/bin/ipsec_mon
 vendor/bin/volte_clientapi_ua

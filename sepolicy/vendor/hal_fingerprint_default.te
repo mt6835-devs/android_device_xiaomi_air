@@ -4,3 +4,19 @@ allow hal_fingerprint_default hal_fingerprint_hwservice_xiaomi:hwservice_manager
 set_prop(hal_fingerprint_default, vendor_silead_fp_prop)
 allow hal_fingerprint_default silead_fpd_device:chr_file { ioctl open read write getattr };
 r_dir_file(hal_fingerprint_default, sysfs_power_supply)
+allow hal_fingerprint_default silead_fpd_device:chr_file rw_file_perms;
+allow hal_fingerprint_default mitee_client_device:chr_file rw_file_perms;
+allow hal_fingerprint_default teeperf_device:chr_file rw_file_perms;
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
+allow hal_fingerprint_default ion_device:chr_file r_file_perms;
+allow hal_fingerprint_default fpc_data_file:dir create_dir_perms;
+allow hal_fingerprint_default fpc_data_file:file create_file_perms;
+allow hal_fingerprint_default vendor_data_file:dir create_dir_perms;
+allow hal_fingerprint_default vendor_data_file:file create_file_perms;
+allow hal_fingerprint_default sysfs:file rw_file_perms;
+allow hal_fingerprint_default sysfs_batteryinfo:dir r_dir_perms;
+allow hal_fingerprint_default sysfs_batteryinfo:file r_file_perms;
+allow hal_fingerprint_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
+get_prop(hal_fingerprint_default, vendor_default_prop)
+set_prop(hal_fingerprint_default, vendor_default_prop)
