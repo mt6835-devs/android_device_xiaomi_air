@@ -258,6 +258,10 @@ ro.telephony.sim.count=2
 telephony.active_modems.max_count=2
 persist.vendor.radio.smart.data.switch=1
 
+# IMS / VoWiFi
+persist.vendor.mtk.wfc.enable=1
+persist.vendor.mtk_wfc_support=1
+
 # TEE
 ro.vendor.mtk_tee_gp_support=1
 ro.vendor.mtk_microtrust_tee_support=1
