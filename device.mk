@@ -18,6 +18,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Inherit common MediaTek IMS
 $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
+# Inherit common MediaTek telephony overlays
+$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
 DEVICE_PATH := device/xiaomi/air
 
 # Linker config

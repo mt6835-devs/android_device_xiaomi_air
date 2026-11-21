@@ -456,4 +456,12 @@
     <string-array name="config_oemFastChargerStatusPaths" translatable="false">
          <item>/sys/devices/platform/charger/fast_chg_indicator;4</item>
     </string-array>
+
+    <!-- IMS / VoLTE / VoWiFi -->
+    <bool name="config_device_volte_available">true</bool>
+    <bool name="config_carrier_volte_available">true</bool>
+    <bool name="config_device_vt_available">true</bool>
+    <bool name="config_carrier_vt_available">true</bool>
+    <bool name="config_device_wfc_ims_available">true</bool>
+    <bool name="config_carrier_wfc_ims_available">true</bool>
 </resources>
