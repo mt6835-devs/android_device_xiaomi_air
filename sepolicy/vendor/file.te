@@ -4,3 +4,8 @@ type camera_persist_file, file_type;
 
 # Touchscreen
 type proc_tp_gesture, fs_type, proc_type;
+
+# Battery / USB supply (Lineage Health compatibility)
+type vendor_sysfs_battery_supply, sysfs_type, fs_type;
+type vendor_sysfs_usb_supply, sysfs_type, fs_type;
+

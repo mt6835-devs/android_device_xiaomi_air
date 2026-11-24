@@ -22,6 +22,8 @@ $(call inherit-product, vendor/mediatek/ims/ims.mk)
 $(call inherit-product, hardware/mediatek/overlay/mssi.mk)
 
 DEVICE_PATH := device/xiaomi/air
+TARGET_BOARD_PLATFORM := mt6835
+PRODUCT_SOURCE_ROOT_DIRS += -vendor/qcom/common
 
 # Linker config
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
