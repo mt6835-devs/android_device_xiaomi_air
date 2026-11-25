@@ -273,8 +273,21 @@ on post-fs-data
     #Accdet
     chown root radio /sys/devices/platform/Accdet_Driver/driver/accdet_call_state
 
-    #Fingerprint
+    # Fingerprint
+    chown system system /dev/silead_fp
+    chmod 0660 /dev/silead_fp
+    chown system system /dev/silead_stub
+    chmod 0660 /dev/silead_stub
     chmod 0666 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+    chmod 0666 /sys/devices/platform/soc/11011000.spi1/spi_master/spi1/spi1.0/irq
+    chmod 0666 /sys/devices/platform/soc/11011000.spi1/spi_master/spi1/spi1.0/wakeup_enable
+    chmod 0666 /sys/devices/platform/soc/11011000.spi1/spi_master/spi1/spi1.0/modalias
+    chmod 0666 /sys/devices/platform/soc/11011000.spi1/spi_master/spi1/spi1.0/clk_enable
+    chown system system /sys/devices/platform/soc/11011000.spi1/spi_master/spi1/spi1.0/irq
+    chown system system /sys/devices/platform/soc/11011000.spi1/spi_master/spi1/spi1.0/wakeup_enable
+    chown system system /sys/devices/platform/soc/11011000.spi1/spi_master/spi1/spi1.0/modalias
+    chown system system /sys/devices/platform/soc/11011000.spi1/spi_master/spi1/spi1.0/clk_enable
 
     #vdec-fmt
     chmod 0660 /dev/vdec-fmt
