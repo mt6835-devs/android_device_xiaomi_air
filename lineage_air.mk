@@ -19,11 +19,21 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 23124RN87G
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="air_global-user 15 AP3A.240905.015.A23 OS2.0.206.0.VGQMIXM release-keys" \
-    BuildFingerprint=Redmi/air_global/air:15/AP3A.240905.015.A2/OS2.0.206.0.VGQMIXM:user/release-keys
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BRAND_FOR_ATTESTATION := $(PRODUCT_BRAND)
+PRODUCT_DEVICE_FOR_ATTESTATION := $(PRODUCT_DEVICE)
+PRODUCT_MODEL_FOR_ATTESTATION := $(PRODUCT_MODEL)
+PRODUCT_NAME_FOR_ATTESTATION := air_global
+PRODUCT_MANUFACTURER_FOR_ATTESTATION := $(PRODUCT_MANUFACTURER)
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="missi-user 15 AP3A.240905.015.A2 OS2.0.208.0.VGQMIXM release-keys" \
+    BuildFingerprint=Redmi/air_global/air:15/AP3A.240905.015.A2/OS2.0.208.0.VGQMIXM:user/release-keys \
+    DeviceName=air \
+    DeviceProduct=air_global \
+    SystemDevice=air \
+    SystemName=air_global
 
 WITH_GMS=true
 TARGET_USES_PICO_GAPPS=true
